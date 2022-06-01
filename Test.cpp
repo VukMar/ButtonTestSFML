@@ -22,11 +22,11 @@ class DisplayText
 
         std::string TextText;
 
-        //Text boudns:
+        //Text bounds:
         float width;
         float height;
         
-        void Calibrate() //Sets text params and applies changes when done with chage text funcction
+        void Calibrate() //Sets text params and applies changes when done with change text function
         {
             MainTxt.setFillColor(TxtColor);
             MainTxt.setString(TextText);
