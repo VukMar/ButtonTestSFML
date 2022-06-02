@@ -169,6 +169,7 @@ class Button
                     ButtonClick = true;
                     return true;
                 }
+                else return false;
             }
             else ButtonClick = false; //Return clicked state
             return false;
