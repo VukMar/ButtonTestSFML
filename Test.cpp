@@ -163,9 +163,12 @@ class Button
             }
             if(CursorOverButton(window) && !wFocus && sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
             {
-                if(!ButtonClick) ClickSound.play(); //Plays only on first click
-                ButtonClick = true;
-                return true;
+                if(!ButtonClick)
+                { 
+                    ClickSound.play(); //Plays only on first click
+                    ButtonClick = true;
+                    return true;
+                }
             }
             else ButtonClick = false; //Return clicked state
             return false;
